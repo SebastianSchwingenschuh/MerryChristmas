@@ -1,0 +1,10 @@
+2022-01-06 19:24:29.842                 [main] INFO  ChristmasTree - Trying to read lines from file "input/wishlist.txt".
+2022-01-06 19:24:29.923                 [main] WARN  Present - New max age 123 invalid. Max age remains 99.
+2022-01-06 19:24:29.929                 [main] ERROR SantasWorkshop - Exception occured while processing raw string. Message: begin 0, end -1, length 0.
+2022-01-06 19:24:29.931                 [main] WARN  ChristmasTree - Present was null, too big or already under the tree. Ignoring it and returning false.
+2022-01-06 19:24:29.938                 [main] WARN  Present - New min age -3 invalid. Min age remains 1.
+2022-01-06 19:24:29.942                 [main] ERROR SantasWorkshop - Exception occured while processing raw string. Message: begin 0, end -1, length 13.
+2022-01-06 19:24:29.945                 [main] WARN  ChristmasTree - Present was null, too big or already under the tree. Ignoring it and returning false.
+2022-01-06 19:24:29.979                 [main] WARN  ChristmasTree - Present was null, too big or already under the tree. Ignoring it and returning false.
+2022-01-06 19:24:29.982                 [main] ERROR SantasWorkshop - Exception occured while processing raw string. Message: begin 5, end -1, length 40.
+2022-01-06 19:24:29.984                 [main] WARN  ChristmasTree - Present was null, too big or already under the tree. Ignoring it and returning false.
