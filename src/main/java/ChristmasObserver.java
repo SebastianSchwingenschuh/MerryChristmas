@@ -1,2 +1,3 @@
-﻿public interface ChristmasObserver {
+public interface ChristmasObserver {
+    void gift(Present present);
 }

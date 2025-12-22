@@ -1,4 +1,4 @@
-﻿public class ChristmasException extends RuntimeException {
+public class ChristmasException extends RuntimeException {
     public ChristmasException(String message) {
         super(message);
     }
