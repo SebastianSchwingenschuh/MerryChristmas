@@ -78,18 +78,22 @@ public class Present implements Comparable<Present>{
             sizeChar.append("=");
         }
         
-        //"[=]* Nice Watch (1+) for Mom"
-        if(!Objects.equals(this.getRecipient(), "")){
-            if (this.getMaxAge() == 99){
-                return String.format("[%s]* %s (%d+) for %s", sizeChar, this.getContent(), this.getMinAge(), this.getRecipient());
-            }
-            return String.format("[%s]* %s (%d-%d) for %s", sizeChar, this.getContent(), this.getMinAge(), this.getMaxAge(), this.getRecipient());
-        }
+        
+        String result;
+        
         //"[===]* Catan Junior (6-10)"
         if(this.getMaxAge() == 99){
-            return String.format("[%s]* %s (%d+)", sizeChar, this.getContent(), this.getMinAge());    
+            result = String.format("[%s]* %s (%d+)", sizeChar, this.getContent(), this.getMinAge());    
         }
-        return String.format("[%s]* %s (%d-%d)", sizeChar, this.getContent(), this.getMinAge(), this.getMaxAge());
+        else {
+            result = String.format("[%s]* %s (%d-%d)", sizeChar, this.getContent(), this.getMinAge(), this.getMaxAge());
+        }
+        
+        if(this.getRecipient() != ""){
+            result += String.format(" for %s", this.getRecipient());
+        }
+        
+        return result;
     }
 
     @Override

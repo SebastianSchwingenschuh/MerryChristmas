@@ -28,11 +28,11 @@ public class Giftee implements ChristmasObserver {
     }
 
     public int getPresentCount() {
-        return -1;
+        return this.presents.size();
     }
     
     public boolean hasPresent(Present present) {
-        return false;
+        return this.presents.contains(present);
     }
 
     @Override
